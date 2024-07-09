@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Web3 - Blockchain Test
 
-## Getting Started
+🔍 Welcome to the Web3 - Blockchain Test! This project evaluates your ability to integrate MetaMask (or other Web3 wallets) into a Next.js application while ensuring user control over wallet connectivity.
 
-First, run the development server:
+## Objective
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The goal is to implement a login page with the following requirements:
+- **Automatic Connection:** Initially, the application automatically checks if a Web3 wallet (like MetaMask) is connected and retrieves the user's wallet address.
+- **Connect Wallet Button:** Instead of automatic connection, implement a "Connect Wallet" button that users must click to connect their wallet.
+- **Disconnect Wallet Button:** Provide a way to disconnect the wallet if it's connected.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js:** React framework for server-side rendering and frontend.
+- **ethers.js:** Library for interacting with Ethereum wallets and smart contracts.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## How to Run the Project
 
-## Learn More
+To run this project locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Node.js:** Make sure Node.js is installed on your machine. You can download it from [nodejs.org](https://nodejs.org/).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+2. Clone the repository to your local machine:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   git clone <repository-url>
+   cd <project-folder>
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Install dependencies using npm or yarn:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+### Running the Development Server
+
+- Start the Next.js development server:
+
+  ```bash
+  npm run dev
+  # or
+  yarn dev
+  ```
+
+
+## Additional Notes
+
+- This project assumes familiarity with JavaScript/TypeScript, React, and Ethereum/Web3 development.
+- Make sure to handle errors gracefully, especially when dealing with asynchronous wallet interactions.
+
+---
+🚀 Happy coding! If you encounter any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
